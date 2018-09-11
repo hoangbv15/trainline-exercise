@@ -1,4 +1,5 @@
-﻿using AddressProcessing.Address;
+﻿using System;
+using AddressProcessing.Address;
 using AddressProcessing.Address.v1;
 using NUnit.Framework;
 
@@ -33,6 +34,19 @@ namespace AddressProcessing.Tests
             {
                 Counter++;
             }
+        }
+
+        [Test]
+        public void so()
+        {
+            var a = "sfjoidfjis";
+            Test(out a);
+            Console.WriteLine(a);
+        }
+
+        private void Test(out string a)
+        {
+            a = "test";
         }
     }
 }

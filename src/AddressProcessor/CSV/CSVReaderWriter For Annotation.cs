@@ -8,9 +8,11 @@ namespace AddressProcessing.CSV
 
         Please leave the rest of this file as it is so we can discuss your concerns during the next stage of the interview process.
         
-        *)
-        *)
-        *)
+        *) Use disposable resource but does not implement IDisposable
+        *) Concrete class without interface makes testing difficult for class users
+        *) Redundant explicit enum values for Mode
+        *) Has too much responsibility, CSVReaderWriter should only care about reading/writing CSV strings, not system files.
+        *) Confusing apis. Write takes x number of columns but Read only produces 2 columns? Also the first Read(string, string) is wrong, not having "out" will pass the strings by value.
     */
 
     public class CSVReaderWriterForAnnotation
