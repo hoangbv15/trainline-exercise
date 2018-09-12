@@ -16,8 +16,8 @@ namespace AddressProcessing.Address
 
         public void Process(string inputFile)
         {
-            var reader = new CSVReaderWriter();
-            reader.Open(inputFile, CSVReaderWriter.Mode.Read);
+            var reader = new CsvReaderWriter();
+            reader.Open(inputFile, Mode.Read);
 
             string column1, column2;
 

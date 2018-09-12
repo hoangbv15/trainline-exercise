@@ -12,7 +12,7 @@ namespace AddressProcessing.CSV
         *) Concrete class without interface makes testing difficult for class users
         *) Redundant explicit enum values for Mode
         *) Has too much responsibility, CSVReaderWriter should only care about reading/writing CSV strings, not system files.
-        *) Confusing apis. Write takes x number of columns but Read only produces 2 columns? Also the first Read(string, string) is wrong, not having "out" will pass the strings by value.
+        *) Confusing apis. Write takes x number of columns but Read only produces 2 columns? Also the first Read(string, string) is wrong, not having "out" will pass the strings by value. The correct Read should be named TryRead
     */
 
     public class CSVReaderWriterForAnnotation

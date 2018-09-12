@@ -56,7 +56,10 @@
     <Compile Include="Address\AddressRecord.cs" />
     <Compile Include="Address\AddressFileProcessor.cs" />
     <Compile Include="CSV\CSVReaderWriter For Annotation.cs" />
-    <Compile Include="CSV\CSVReaderWriter.cs" />
+    <Compile Include="CSV\CsvReaderWriter.cs" />
+    <Compile Include="CSV\TextFile.cs" />
+    <Compile Include="CSV\ICsvReaderWriter.cs" />
+    <Compile Include="FileSystem\IFile.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Address\v1\IMailShot.cs" />
     <Compile Include="Address\v2\IMailShot.cs" />
